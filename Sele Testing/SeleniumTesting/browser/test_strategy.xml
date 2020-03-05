@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests" >
+<test name="ChromeTest">
+<parameter name="browser" value="chrome"/>
+<parameter name="username" value="" />
+<parameter name="password" value=""/>
+<parameter name="product" value ="redmi note 8 pro"/>
+<parameter name="product_name" value ="Redmi Note 8 Pro (Shadow Black, 128 GB)"/>
+<parameter name="price" value ="16410"/>
+<classes>
+<class name="testcases.testbrowser">
+</class>
+</classes>
+</test>
+</suite>
