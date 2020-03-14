@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="7765" started-at="2020-03-14T22:56:12 IST" finished-at="2020-03-14T22:56:20 IST">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="7765" started-at="2020-03-14T22:56:12 IST" finished-at="2020-03-14T22:56:20 IST">
+      <class name="testcases.testbrowser">
+        <test-method status="PASS" signature="beforeclass(java.lang.String)[pri:0, instance:testcases.testbrowser@d109c4f]" name="beforeclass" is-config="true" duration-ms="6852" started-at="2020-03-14T22:56:12 IST" finished-at="2020-03-14T22:56:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.util.Properties)[pri:0, instance:testcases.testbrowser@d109c4f]" name="login" duration-ms="0" started-at="2020-03-14T22:56:19 IST" finished-at="2020-03-14T22:56:19 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method login requires 3 parameters but 2 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method login requires 3 parameters but 2 were supplied in the @Test annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:449)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="testCase(java.lang.String, java.lang.String, int, java.util.Properties)[pri:1, instance:testcases.testbrowser@d109c4f]" name="testCase" duration-ms="0" started-at="2020-03-14T22:56:19 IST" depends-on-methods="testcases.testbrowser.login" finished-at="2020-03-14T22:56:19 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testbrowser.testCase(java.lang.String, java.lang.String, int, java.util.Properties)[pri:1, instance:testcases.testbrowser@d109c4f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testbrowser.testCase(java.lang.String, java.lang.String, int, java.util.Properties)[pri:1, instance:testcases.testbrowser@d109c4f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.testbrowser@d109c4f]" name="afterTest" is-config="true" duration-ms="851" started-at="2020-03-14T22:56:19 IST" finished-at="2020-03-14T22:56:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcases.testbrowser -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- TestSuite -->
+</testng-results>

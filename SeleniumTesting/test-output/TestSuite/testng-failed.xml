@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test thread-count="1" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="password" value="Vinayak@1a"/>
+    <parameter name="product" value="redmi note 8 pro"/>
+    <parameter name="price" value="16410"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="product_name" value="Redmi Note 8 Pro (Shadow Black, 128 GB)"/>
+    <parameter name="username" value="9716475059"/>
+    <classes>
+      <class name="testcases.testbrowser">
+        <methods>
+          <include name="afterTest"/>
+          <include name="login"/>
+          <include name="testCase"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- testcases.testbrowser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
